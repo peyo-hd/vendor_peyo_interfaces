@@ -1,3 +1,6 @@
+#define LOG_TAG "vendor.peyo.simple@1.0-service"
+#include <android-base/logging.h>
+
 #include "Simple.h"
 
 namespace vendor {
@@ -8,8 +11,8 @@ namespace implementation {
 
 // Methods from ::vendor::peyo::simple::V1_0::ISimple follow.
 Return<int32_t> Simple::convert(int32_t valueIn) {
-    // TODO implement
-    return int32_t {};
+    LOG(INFO) << "Simple::convert() valueIn :" << valueIn;
+    return valueIn + 100;
 }
 
 
