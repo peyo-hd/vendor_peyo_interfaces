@@ -1,0 +1,13 @@
+android_app {
+    name: "simpleJavaTest",
+    optimize: {
+      enabled: false,
+    },
+    sdk_version: "current",
+
+    srcs: ["src/**/*.java"],
+    resource_dirs: ["res"],
+    static_libs: [
+      "vendor.peyo.simple-V1.0-java",
+    ],
+}
