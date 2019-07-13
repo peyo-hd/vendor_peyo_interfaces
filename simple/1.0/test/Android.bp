@@ -1,0 +1,16 @@
+cc_binary {
+    name: "simpletest",
+    srcs: ["main.cpp"],
+    shared_libs: [
+        "libbase",
+        "libhidlbase",
+        "libhidltransport",
+        "libutils",
+        "liblog",
+        "vendor.peyo.simple@1.0",
+    ],
+    cflags: [
+      "-Wall",
+      "-Werror",
+    ],    
+}
