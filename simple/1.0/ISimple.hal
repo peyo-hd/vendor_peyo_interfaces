@@ -1,0 +1,5 @@
+package vendor.peyo.simple@1.0;
+
+interface ISimple {
+    convert(int32_t valueIn) generates (int32_t valueOut);
+};
